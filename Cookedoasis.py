@@ -1,65 +1,67 @@
 import sys
 
+
 class Anti_soft_Drink():
-    print '''Diabetes mellitus, often simply referred to as diabetes, \n is a group of metabolic diseases in which a person has high blood sugar, \
-either because the body does not produce enough insulin, 
-or because cells do not respond to the insulin that is produced.
-This high blood sugar produces the classical symptoms of \n polyuria (frequent urination), polydipsia (increased thirst) and \n  polyphagia (increased hunger)"
-    This is a console program that predicts if a user is liable to
-    be diabetic.'''
-    ## Introduction By Tonte ##
-   
-    print ""
-    print ""
-    ## Creating a space for the user to input his or her details ##
-    print "Please enter your name:"
-    name = raw_input()
-    print "Welcome " + name + ", this is a basic Python program that predicts if your lifestyle makes you prone to diabetes."
-    print " After every test you are awarded with points at the end,\
-    the fewer points you have, the better"
-
-    print " This program comprises of a series of tests"
-    raw_input( "Press <enter> to begin" )
-
-print " Are you male or female"
-user_gender = raw_input ( " m / f    ")
-if user_gender == "m":
-    print "Males are more likely to be diabetic"
-    point_0= int(3)
-    print "You have gained 3 points"
-elif user_gender == "f":
-    print " Females are less likely to be diabetic"
-    point_0 = int(0)
-    print " You have gained 0 points"
-
-raw_input( "press <enter> to continue" )
 
 
-print " How old are you?"   
-user_age = int (input())
-if 44< user_age <55 :
-        print " You are more prone to diabetes"
-        point_1= int(4)
-        print " you have gained 4 points"
-elif 66< user_age <200:
-        print "Your age group is tme most prone to diabetes"
-        point_1= int(8)
-        print " You have gained 8 points"
+    def print_blank_lines():
+        print("")
+        print("")
 
-elif 55<= user_age <=64:
-        print "People of this age group are prone to diabetes"
-        point_1= int(6)
-        print "You have gained 6 points"
+    def intro():
+        print('''Diabetes mellitus, often simply referred to as diabetes,
+              is a group of metabolic diseases in which a person has high blood sugar, 
+              either because the body does not produce enough insulin, 
+              or because cells do not respond to the insulin that is produced.
+              This high blood sugar produces the classical symptoms of \n polyuria (frequent urination),
+              polydipsia (increased thirst) and \n  polyphagia (increased hunger)"
+              This is a console program that predicts if a user is liable to
+              be diabetic.''')
+        print_blank_lines()
+        name = raw_input("Please enter your name: ")
+        print('Welcome {},this is a basic Python program that predicts if your lifestyle makes you prone to diabetes.'.format(name))
+        print('After every test you are awarded with points at the end,the fewer points you have, the better')
+        print("This program comprises of a series of tests")
+        raw_input( "Press <enter> to begin" )
+        
+ def game_init():
+        '''Creating a space for the user to input his or her details.'''
 
-elif 35< user_age <= 44:
-        print " You are less prone to get diabetes"
-        point_1 = int(2)
-        print "you have two points"
-elif 1<= user_age <=35:
-        print " Getting diabetes is virtually impossible at this age unless you \
-live a very unhealthy lifestyle or have a family history of diabetes"
-        point_1 = int(0)
-        print "you have 0 points"
+    user_gender = raw_input ("Enter (m) if you are male and (f) if female: ").lower()
+    if user_gender == "m": print("Males are more likely to be diabetic")
+        points = 3
+        print("You have gained {} points".format(points))
+        #return points
+    elif user_gender == "f": print " Females are less likely to be diabetic"
+        points = 0
+        print("You have gained {} points".format(points))
+        #return points
+
+def get_age():
+    user_age = int(input("How old are you?: "))
+    if user_age < 55 and user_age > 44:
+            print " You are more prone to diabetes"
+            point_1= int(4)
+            print " you have gained 4 points"
+    elif user_age < 200 and user_age > 66:
+            print "Your age group is tme most prone to diabetes"
+            point_1= int(8)
+            print " You have gained 8 points"
+    
+    elif user_age <= 64 and user_age >= 55:
+            print "People of this age group are prone to diabetes"
+            point_1= int(6)
+            print "You have gained 6 points"
+    
+    elif 35< user_age <= 44:
+            print " You are less prone to get diabetes"
+            point_1 = int(2)
+            print "you have two points"
+    elif 1<= user_age <=35:
+            print " Getting diabetes is virtually impossible at this age unless you \
+    live a very unhealthy lifestyle or have a family history of diabetes"
+            point_1 = int(0)
+            print "you have 0 points"
 
 
 raw_input( "press <enter> to continue" )
