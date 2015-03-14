@@ -40,27 +40,27 @@ class Anti_soft_Drink():
 def get_age():
     user_age = int(input("How old are you?: "))
     if user_age < 55 and user_age > 44:
-            print " You are more prone to diabetes"
-            point_1= int(4)
-            print " you have gained 4 points"
+            print("You are more prone to diabetes")
+            point_1= 4
+            print(" you have gained 4 points")
     elif user_age < 200 and user_age > 66:
-            print "Your age group is tme most prone to diabetes"
-            point_1= int(8)
-            print " You have gained 8 points"
+            print("Your age group is tme most prone to diabetes")
+            point_1= 8
+            print("You have gained 8 points")
     
     elif user_age <= 64 and user_age >= 55:
             print "People of this age group are prone to diabetes"
-            point_1= int(6)
+            point_1= 6
             print "You have gained 6 points"
     
     elif 35< user_age <= 44:
             print " You are less prone to get diabetes"
-            point_1 = int(2)
+            point_1 = 2
             print "you have two points"
     elif 1<= user_age <=35:
             print " Getting diabetes is virtually impossible at this age unless you \
     live a very unhealthy lifestyle or have a family history of diabetes"
-            point_1 = int(0)
+            point_1 = 0
             print "you have 0 points"
 
 
@@ -164,36 +164,22 @@ print "points"
 
 raw_input( "press <enter> to continue" )
 
+print_blank_lines()
 
-
-
-
-print" "
-print" "
-print" "
-print" "
 print"compare your results with the one below "
-print" "
-print '''5 or less: Low risk
-
-Approximately one person in every 100 will develop diabetes.
-
-\n
-6 - 11: Intermediate risk
-
-For scores of 6-8, approximately one person in every 50 will develop diabetes.
-\
-
-\For scores of 9-11, approximately one person in every 30 will develop diabetes.
-
-\n
-12 or more: High risk
-
-For scores of 12-15, approximately one person in every 14 will develop diabetes.
-For scores of 16-19, approximately one person in every seven will develop diabetes.
-For scores of 20 and above, approximately one person in every three will develop diabetes.
-
-NB. The overall score may overestimate the risk of diabetes in those aged less than 25 years'''
+print_blank_lines()
+print '''
+         5 or less: Low risk
+         Approximately one person in every 100 will develop diabetes.
+         6 - 11: Intermediate risk
+         For scores of 6-8, approximately one person in every 50 will develop diabetes.
+         For scores of 9-11, approximately one person in every 30 will develop diabetes.
+         12 or more: High risk
+         For scores of 12-15, approximately one person in every 14 will develop diabetes.
+         For scores of 16-19, approximately one person in every seven will develop diabetes.
+         For scores of 20 and above, approximately one person in every three will develop diabetes.
+         NB. The overall score may overestimate the risk of diabetes in those aged less than 25 years
+    '''
     
 
 
