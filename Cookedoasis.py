@@ -9,16 +9,13 @@ This high blood sugar produces the classical symptoms of \n polyuria (frequent u
     be diabetic.'''
     ## Introduction By Tonte ##
    
-    print ""
-    print ""
-    ## Creating a space for the user to input his or her details ##
-    print "Please enter your name:"
-    name = raw_input()
-    print "Welcome " + name + ", this is a basic Python program that predicts if your lifestyle makes you prone to diabetes."
-    print " After every test you are awarded with points at the end,\
-    the fewer points you have, the better"
-
-    print " This program comprises of a series of tests"
+    print()
+    print()
+    name = raw_input("Please enter your name:")
+    print("Welcome " + name + ", this is a basic Python program that predicts if your lifestyle makes you prone to diabetes.")
+    print("After every test you are awarded with points at the end",
+        "the fewer points you have, the better")
+    print(" This program comprises of a series of tests")
     raw_input( "Press <enter> to begin" )
 
 print " Are you male or female"
