@@ -1,6 +1,6 @@
 import sys
 
-class Anti_soft_Drink():
+class Anti_soft_Drink:
     
     
     def blank():
@@ -9,7 +9,7 @@ class Anti_soft_Drink():
         
         
     blank()
-    print "This is a console program that predicts when a user will be diabetic."
+    print("This is a console program that predicts when a user will be diabetic.")
     blank()
     query = "Please enter your full name:"
     name = raw_input(query)
@@ -26,7 +26,7 @@ class Anti_soft_Drink():
     elif 3 <= number <= 10:
             print("Please Reduce your intake of soft drinks or in 15 yrs you will be diabetic")
     elif 1<= number < 3:
-            print ("You are safe from diabetes")
+            print("You are safe from diabetes")
             
     blank()
     print("Thanks {} , for taking my Anti-Soft drink advice.".format(name))
